@@ -41,6 +41,14 @@ body {
   position: relative;
 }
 
+.row:nth-child(odd) .column:nth-child(even) {
+  background: rgb(255, 255, 255, 0.35);
+}
+
+.row:nth-child(even) .column:nth-child(odd) {
+  background: rgb(255, 255, 255, 0.35);
+}
+
 .column::before {
   content: attr(data-coord);
   display: block;
@@ -52,11 +60,11 @@ body {
 }
 
 .column[data-available="true"] {
-  background-color: #cafcca;
+  background-color: #cafcca !important;
 }
 
 .column[data-available="true"]:hover {
-  background-color: #cafccacc;
+  background-color: #cafccacc !important;
 }
 
 .item {
