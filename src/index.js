@@ -1,10 +1,7 @@
 import { Checkers, Utils } from "ymir-js";
 
-const { International, Turkish } = Checkers;
-const { Board } = International;
-
-// [TODO]: Change rules with International Rules
-const { Rules } = Turkish;
+const { International } = Checkers;
+const { Board, Rules } = International;
 
 const { useCoord } = Utils;
 
@@ -68,7 +65,7 @@ const App = {
 
       const [toRowId] = useCoord(coord);
 
-      if (toRowId === 0 || toRowId === 7) {
+      if (toRowId === 0 || toRowId === 9) {
         this.activeItem.setKing();
       }
 
@@ -94,18 +91,18 @@ const App = {
         this.activeCoord = coord;
       });
 
-      // const coordsOfDestoryItems = this.rules.getItemsBetweenTwoCoords(
-      //   this.activeCoord,
-      //   coord
-      // );
+      const coordsOfDestoryItems = this.rules.getItemsBetweenTwoCoords(
+        this.activeCoord,
+        coord
+      );
 
-      // coordsOfDestoryItems.forEach((coord) => {
-      //   const destoryAniamtion = animate(coord, { opacity: 0 });
+      coordsOfDestoryItems.forEach((coord) => {
+        const destoryAniamtion = animate(coord, { opacity: 0 });
 
-      //   destoryAniamtion.finished.then(() => {
-      //     this.board.removeItem(coord);
-      //   });
-      // });
+        destoryAniamtion.finished.then(() => {
+          this.board.removeItem(coord);
+        });
+      });
     },
   },
 };
