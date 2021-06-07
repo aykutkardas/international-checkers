@@ -5312,7 +5312,7 @@ xtend@^4.0.0, xtend@~4.0.1:
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
-ymir-js@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/ymir-js/-/ymir-js-0.1.6.tgz#d025bdda980741e016c8857a59d81de659dc4eb5"
-  integrity sha512-89xXt4EVA/v+Hz9g2QpGU22kxJzYbN0MFxUXPhiSwoIalmAMgWaV7q9Bg21ewWEI46v1rvHYSvPRPT5YsOxfbQ==
+ymir-js@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/ymir-js/-/ymir-js-0.1.7.tgz#627fa2460959b471da9db1277b07da7ebbaf9969"
+  integrity sha512-yZOG+LxlduW30N5Oeh7lMuYkLUFYwoN3JFre9Bw4rOULqSc7kIOr3bXg5Q0mAjxXUVjt23yuXauscX0fYRsv8w==
